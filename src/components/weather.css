@@ -1,0 +1,16 @@
+.col-6 {
+    position: relative;
+}
+
+.col-6 span {
+    background-color: rgb(180, 211, 241);
+    padding: 3px;
+    position: absolute;
+    top: 8px;
+    right: 5%;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+
