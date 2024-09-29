@@ -69,7 +69,6 @@ const Weather = () => {
         setData({ ...data, error: null });
         try {
             const response = await axios(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=72b1aa9f3540bd34349eebb97cbbfb7f&units=metric`);
-            // console.log(response.data);
 
 
             const pressure = response.data.main.pressure;
@@ -135,7 +134,7 @@ const Weather = () => {
             <div className=" pt-2">
                 <div className="container text-center">
                     <div className="row column-gap-2  d-flex justify-content-center align-items-center ">
-                        <div className="col-3  rounded p-2">
+                        <div className="col-8  rounded p-2">
                             <span>
                                 <input
                                     className='text-black'
@@ -149,21 +148,6 @@ const Weather = () => {
                             </span>
                         </div>
 
-                        <div className="col-2  rounded p-2">
-                            Column
-                        </div>
-
-                        <div className="col-2 rounded p-2">
-                            Column
-                        </div>
-
-                        <div className="col-2 rounded p-2">
-                            Column
-                        </div>
-
-                        <div className="col-2 rounded p-2">
-                            Column
-                        </div>
 
                     </div>
                 </div>
